@@ -4,7 +4,7 @@
 #include "constants.h"
 
 
-void console()
+static void console()
 {
     AllocConsole();
     freopen("CONOUT$", "w", stdout);
@@ -21,6 +21,12 @@ void console()
 
         if (input == "up")
             localPlayer->pos.y += 100;
+        if (input == "player")
+			std::cout << "Player: " << localPlayer << std::endl;
+		if (input == "pos")
+			std::cout << "Position: " << localPlayer->pos.x << ", " << localPlayer->pos.y << ", " << localPlayer->pos.z << std::endl;
+        if (input == "players")
+			std::cout << "Number of players:" << numPlayers << std::endl;
 
     }
 
@@ -29,7 +35,7 @@ void console()
 
 
 
-BOOL APIENTRY DllMain( HMODULE hModule,
+static BOOL APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,
                        LPVOID lpReserved
                      )

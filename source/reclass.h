@@ -23,3 +23,9 @@ public:
 	int32_t maxHealth; //0x0050
 	char pad_0054[480]; //0x0054
 }; //Size: 0x0234
+
+class EntityList
+{
+public:
+	Player* players[33];
+};

@@ -6,3 +6,5 @@
 extern HMODULE hModule;
 extern uintptr_t baseAddress;
 extern Player* localPlayer;
+extern EntityList* players;
+extern int numPlayers;
