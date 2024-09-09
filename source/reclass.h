@@ -1,14 +1,8 @@
 #pragma once
 #include <windows.h>
 #include <iostream>
+#include "geom.h"
 
-class Vector3
-{
-public:
-	float x;
-	float z;
-	float y;
-};
 
 class Player
 {

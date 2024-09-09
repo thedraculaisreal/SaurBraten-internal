@@ -27,7 +27,7 @@ static void console()
 			std::cout << "Position: " << localPlayer->pos.x << ", " << localPlayer->pos.y << ", " << localPlayer->pos.z << std::endl;
         if (input == "players")
 			std::cout << "Number of players:" << numPlayers << std::endl;
-
+        
     }
 
 	FreeConsole();
